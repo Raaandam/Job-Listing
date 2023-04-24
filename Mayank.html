@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Job Listings</title>
+    <link rel="stylesheet" href="Mayank.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f4f4f4;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		.job-listing {
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			padding: 20px;
+			margin-bottom: 20px;
+			box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+		}
+
+		.job-listing:hover {
+			box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+			transform: translateY(-2px);
+		}
+
+		.job-title {
+			font-size: 24px;
+			margin-bottom: 10px;
+			color: #007bff;
+		}
+
+		.job-company {
+			font-size: 18px;
+			color: #666;
+			margin-bottom: 10px;
+		}
+
+		.job-description {
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
+
+		.job-cta {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #007bff;
+			color: #fff;
+			border-radius: 5px;
+			text-decoration: none;
+			transition: all 0.2s ease-in-out;
+		}
+
+		.job-cta:hover {
+			background-color: #0056b3;
+		}
+	</style>
+</head>
+<body>
+    <main>
+        <form id="search-form">
+                <label for="job-title">Job Title:</label>
+                <input type="text" id="job-title" name="job-title">
+                <label for="job-location">Job Location:</label>
+                <input type="text" id="job-location" name="job-location">
+                <label for="full-time">Full Time:</label>
+                <input type="checkbox" id="full-time" name="full-time">
+                <label for="part-time">Part Time:</label>
+                <input type="checkbox" id="part-time" name="part-time">
+                <button type="submit">Search</button>
+            </form>
+        </main>
+        <div id="job-listings-container"></div>
+        <script src="Mayank.js"></script>
+	<div class="container">
+		<div class="job-listing">
+			<h2 class="job-title">Front-end Developer</h2>
+			<p class="job-company">ABC Company</p>
+			<p class="job-description">We are looking for a front-end developer with experience in HTML, CSS, JavaScript, and React.</p>
+			<a href="#" class="job-cta">Apply now</a>
+		</div>
+		<div class="job-listing">
+			<h2 class="job-title">Marketing Manager</h2>
+			<p class="job-company">XYZ Company</p>
+			<p class="job-description">We are seeking a marketing manager to oversee our marketing campaigns and strategy.</p>
+			<a href="#" class="job-cta">Apply now</a>
+		</div>
+		<div class="job-listing">
+			<h2 class="job-title">Software Engineer</h2>
+			<p class="job-company">123 Company</p>
+			<p class="job-description">We are looking for a software engineer to join our team and help us build great software products.</p>
+			<a href="#" class="job-cta">Apply now</a>
+		</div>
+	</div>
+</body>
+</html>
